@@ -4,7 +4,7 @@ import webbrowser
 import textwrap
 import time
 
-url = 'https://github.com/xoxocjm111/History-Project'
+url = 'https://github.com/xoxocjm111/Cold-War-Project'
 #windows path
 chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
 version = '1.3.1'
@@ -22,7 +22,7 @@ def exit_timer():
       
 def clear_reset():
    os.system('cls')
-   os.system('python main.py')
+   os.system('python coldwar.py')
 
 os.system('cls')
 print(colored("""
@@ -40,11 +40,11 @@ print('')
 print('')
 print(colored('[1] Code Information (UPDATED REGULARLY)', 'blue'))
 print('')
-print(colored('[2] Rosa Parks and the Bus Boycotts', 'red'))
+print(colored('[2] The Cuban Missile Crisis', 'red'))
 print('')
-print(colored('[3] Little Rock 9', 'blue'))
+print(colored('[3] The Bay of Pigs', 'blue'))
 print('')
-print(colored('[4] March On Washington', 'red'))
+print(colored('[4] NATO', 'red'))
 print('')
 print(colored('[5] About', 'blue'))
 print('')
@@ -61,30 +61,28 @@ while True:
       
    elif user_input == 2:
       os.system('cls')
-      print(textwrap.fill((colored("""The Montgomery Bus Boycott was a civil rights protest in which African-Americans refused to ride city buses in Montgomery, Alabama to protest segregation of seats.
-               The boycott took place from December 5, 1955 to December 20, 1956 and is considered the first large-scale American protest against apartheid. 
-               Four days before the boycott began, Rosa Parks, an African-American woman, was arrested and fined for refusing to give up her bus seat to a white man. 
-               The U.S. Supreme Court eventually ordered Montgomery to integrate its bus system, and one of the boycott's leaders named Martin Luther King Jr, 
-               became a preacher. Prominent leader of the American civil rights movement.""", 'blue'))))
+      print(textwrap.fill((colored("""During the Cuban Missile Crisis of October 1962, U.S. 
+                                      and  Soviet leaders were tense political and military for 13 days over the stationing of Soviet nuclear-armed missiles in Cuba, just 90 miles from the U.S.
+                                      coast. Engaged in a conflict. Tension build tramendicily over the next few days and citizens were expecting the worst.
+                                      They practiced nuclear bombing drills and frightened everyone in the U.S. 
+                                      It took the U.S a few days to then settle the tension by moving their nuclear missiles from Turkey, back to the U.S.""", 'blue'))))
       print('')
       u_i = input(colored('[Y,N]Continue?: ', 'blue')).lower
       if u_i == 'y' or 'Y':
-         os.system('python main.py')
+         os.system('python coldwar.py')
       else:
          os.system('cls')
          exit()
    elif user_input == 3:
          os.system('cls')
-         print(textwrap.fill((colored("""On September 4, 1957, nine African-American students attended Central High School in Little Rock, Arkansas. 
-                          They made their way through crowds shouting obscenities and even throwing objects. 
-                          When the students reached the front gate, the National Guard prevented them from entering the school and  forced them to return home. 
-                          The students returned on September 29. This time they were protected by federal troops. 
-                          Students can enter the school, eventually entering the High School. This group of students became known as "Little Rock Nine".""", 'blue'))))
+         print(textwrap.fill((colored("""In 1959, Fidel Castro came to power in an armed uprising that defeated Cuban dictator Fulgencio Batista. 
+                                         The US government did not trust Castro and did not trust its relationship with Soviet leader Nikita Khrushchev. 
+                                         Prior to his inauguration, John F. Kennedy was briefed on a plan by the Central Intelligence Agency (CIA) developed during the Eisenhower administration to train Cuban asylum seekers to invade their hometown.
+                                         The plan called for Cuban people and elements of the Cuban army to support the invasion. The ultimate goal was to overthrow  Castro and establish a non-communist government friendly to the United States.".""", 'blue'))))
    elif user_input == 4:
       os.system('cls')
-      print(textwrap.fill(colored("""About 250,000 people are participating in  March on Washington for Jobs and Freedom. 
-                                     Martin Luther King delivered his  closing address at the Lincoln Memorial, declaring, "I have a dream that one day this country will rise  and live  the true meaning of the creed: `We stand our ground. 
-                                     These facts are self-evident: that all men are created equal.""", 'blue')))
+      print(textwrap.fill(colored("""The North Atlantic Treaty Organization was established in 1949 by the United States, Canada, and several Western European countries to provide collective security to the Soviet Union. 
+                                     NATO was the first peacetime military alliance formed by the United States  outside  the Western Hemisphere.""", 'blue')))
    elif user_input == 5:
       os.system('cls')
       print('')
@@ -94,7 +92,7 @@ while True:
    print('')
    u_i = input(colored('[Y,N]Continue?: ', 'blue'))
    if u_i == 'y' or 'Y':
-      os.system('python main.py')
+      os.system('python coldwar.py')
    else:
       os.system('cls')
       exit()
